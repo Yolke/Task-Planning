@@ -21,5 +21,8 @@ from TaskPlanning import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('task/',views.list_task),
-    path('task/<int:id>',views.detail_task)
+    path('task/<int:id>',views.detail_task),
+    path('login/', views.login_view, name='login'),
+    path('logout/', views.logout_view, name='logout'),
+    path('signup/', views.signup_view, name='signup')
 ]
